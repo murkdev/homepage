@@ -5,10 +5,29 @@
 	font-family: "helvetica";
 }
 
+body, html {
+	height: 100%;
+	width: 100%;
+}
+
+header {
+	height: 100%;
+	background-color: #FF624A;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
 nav {
+	width: 100%;
+	position: fixed;
+	top: 0;
 	display: flex;
 	justify-content: space-between;
-	margin: 50px 80px;
+	padding: 50px 80px;
 }
 
 ul {
@@ -16,6 +35,11 @@ ul {
 	display: flex;
 }
 
-.inner {
-	margin: 250px 0 200px 0;
+.socialmedia {
+	bottom: 0;
+	position: absolute;
+	display: flex;
+	padding-right: 80px;
+	justify-content: flex-end;
+	width: 100%;
 }
