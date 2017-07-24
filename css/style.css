@@ -1,0 +1,21 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "helvetica";
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 80px;
+}
+
+ul {
+	list-style: none;
+	display: flex;
+}
+
+.inner {
+	margin: 250px 0 200px 0;
+}
