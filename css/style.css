@@ -5,6 +5,10 @@
 	font-family: "helvetica";
 }
 
+a {
+	text-decoration: none;
+}
+
 body, html {
 	height: 100%;
 	width: 100%;
@@ -12,7 +16,7 @@ body, html {
 
 header {
 	height: 100%;
-	background-color: #FF624A;
+	background-color: #FF5649;
 	background-size: cover;
 	display: flex;
 	justify-content: center;
@@ -42,4 +46,70 @@ ul {
 	padding-right: 80px;
 	justify-content: flex-end;
 	width: 100%;
+}
+
+.content_section, .submit_section {
+	text-align: center;
+}
+
+.table {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.card {
+	width: 33%;
+}
+
+.submit_section {
+	background-color: #F9F9F9;
+}
+
+footer {
+	display: flex;
+}
+
+.red_footer, .social_footer {
+	display: flex;
+	/*flex: 1;
+*/}
+
+.red_footer {
+	background-color: #FF5649;
+	width: 100%;
+
+}
+
+.social_footer {
+	background-color: #2E2E30;
+	align-items: flex-end;
+	flex-direction: column;
+}
+
+footer ul {
+	/*Already applied display:flex to all uls, therefore it's not needed to specify it here again*/
+	flex-wrap: wrap;
+}
+
+footer li {
+ width: 50%;
+}
+
+
+nav li {
+	padding: 20px 50px;
+}
+
+a.logo {
+	padding: 20px 0;
+	font-size: 28px;
+	font-weight: bold;
+	color: #fff;
+}
+
+div.socialmedia a {
+	padding: 50px 20px;
+	color: #fff;
+	opacity: .7;
 }
