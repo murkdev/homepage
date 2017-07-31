@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: "helvetica";
+	font-family: 'Noto Sans', sans-serif;
 }
 
 a {
@@ -16,22 +16,25 @@ body, html {
 
 header {
 	height: 100%;
-	background-color: #FF5649;
+	background-color: #FE9570;
 	background-size: cover;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
+	overflow: hidden;
 }
 
 nav {
 	width: 100%;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	display: flex;
 	justify-content: space-between;
-	padding: 50px 80px;
+	padding-left: 80px;
+	margin-top: 50px;
+	align-items: center;
 }
 
 ul {
@@ -59,32 +62,23 @@ ul {
 }
 
 .card {
-	width: 33%;
-}
-
-.submit_section {
-	background-color: #F9F9F9;
+	width: 25.1%;
 }
 
 footer {
 	display: flex;
+	overflow: hidden;
 }
 
 .red_footer, .social_footer {
 	display: flex;
-	/*flex: 1;
-*/}
-
-.red_footer {
-	background-color: #FF5649;
-	width: 100%;
-
 }
 
-.social_footer {
-	background-color: #2E2E30;
-	align-items: flex-end;
-	flex-direction: column;
+.red_footer {
+	background-color: #FE9570;
+	flex-grow: 1;
+	padding: 50px 0;
+
 }
 
 footer ul {
@@ -93,23 +87,174 @@ footer ul {
 }
 
 footer li {
- width: 50%;
+	width: 50%;
+ 	margin-bottom: 10px;
 }
 
 
 nav li {
-	padding: 20px 50px;
+	padding: 10px 50px 10px;
 }
 
 a.logo {
-	padding: 20px 0;
 	font-size: 28px;
 	font-weight: bold;
-	color: #fff;
+	color: #fefefe;
 }
 
-div.socialmedia a {
+div.socialmedia i {
 	padding: 50px 20px;
-	color: #fff;
+	color: #fefefe;
 	opacity: .7;
+}
+
+div.form {
+	display: flex;
+	justify-content: center;
+}
+
+li#apply {
+	background-color: #fefefe;
+}
+
+li#apply a {
+		color: #333;
+		opacity: 1;
+}
+
+nav li a {
+	color: #fefefe;
+	opacity: .7;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+div.inner h1 {
+	font-size: 10rem;
+	color: #fefefe;
+}
+
+div.inner p {
+	font-size: 23px;
+	color: #fefefe;
+}
+
+div.content_section {
+	padding: 300px 0 200px 0;
+}
+
+.content_section h2 {
+	font-size: 4rem;
+	color: #333;
+}
+
+.content_section p {
+	font-size: 1.25rem;
+	margin: 50px auto 150px;
+	color: #333;
+	line-height: 1.75;
+}
+
+.card {
+	margin: 50px 0;
+}
+
+.card i {
+	font-size: 50px;
+	border: 1px solid rgba(0, 0, 0, .1);
+	padding: 50px;
+	border-radius: 50%;
+	color: #333;
+}
+
+.card p {
+	font-size: 16px;
+	font-weight: 700;
+	margin: 40px 0 0 0;
+	color: #333;
+}
+
+.submit_section {
+	background-color: #f9f9f9;
+	padding: 80px 0;
+}
+
+span {
+	font-size: 24px;
+	font-weight: 700;
+	color: #FE9570;
+}
+
+.submit_section h3 {
+	font-size: 2.75rem;
+	color: #333;
+}
+
+.submit_section .form {
+	margin-top: 50px;
+}
+
+.submit_section input {
+	padding: 20px;
+	width: 700px;
+	border-style: none;
+	backgroung-color: #fefefe;
+}
+
+.submit_section button {
+	position: relative;
+	left: -10%;
+	height: 45px;
+	align-self: center;
+	padding: 10px;
+	width: 200px;
+	text-transform: uppercase;
+	text-align: left;
+	color: #fefefe;
+	background-color: #FE9570;
+	border-style: none;
+	font-weight: 700;
+	padding-left: 50px;
+}
+
+footer a {
+	color: #fefefe;
+}
+
+.social_footer {
+	padding: 50px;
+	padding-right: 200px;
+	background-color: #333;
+	flex-direction: column;
+}
+
+.social_footer i {
+	padding-right: 20px;
+}
+
+.social_footer a {
+	margin-bottom: 10px;
+	opacity: .3;
+	font-size: 13px;
+}
+
+.footer_logo {
+	margin-left: 80px;
+	margin-right: 200px;
+}
+
+.footer_logo p {
+	margin-top: 30px;
+	color: #fefefe;
+	opacity: .5;
+	font-size: 14px;
+}
+
+.footer_links a {
+	opacity: .6;
+	text-transform: uppercase;
+	color: #fefefe;
+	font-size: 14px;
 }
